@@ -3,6 +3,7 @@ layout: post
 title: first post
 date: 2025-06-30
 description: experiences with summer before sophmore year
+tags: other
 ---
 
 I can't lie, this summer has been *pretty boring*. Usually, I feel somewhat productive during these times of the year, but with all the important milestones coming up next year, I'm feeling a bit overwhelemed, leading me to do stuff like making this blog. That is okay though, I believe that it is okay to relax during the summer (especially while being campless). Anyways, I've been having a lot of time to do a lot of math and stuff, so be sure to tune in on future posts. I'm probably going to either do one of two things:
