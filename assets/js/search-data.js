@@ -16,7 +16,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-basic-matrix-operations-artin-1-1",
+        
+          title: "basic matrix operations (artin 1.1)",
+        
+        description: "yay artin",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/matrices-the-basic-operations/";
+          
+        },
+      },{id: "post-first-post",
+        
+          title: "first post",
+        
+        description: "experiences with summer before sophmore year",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/summer-first-post/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
@@ -135,17 +157,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/geojson-map/";
-          
-        },
-      },{id: "post-a-post-with-echarts",
-        
-          title: "a post with echarts",
-        
-        description: "this is what included echarts code could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/echarts/";
           
         },
       },{id: "post-displaying-external-posts-on-your-al-folio-blog",
