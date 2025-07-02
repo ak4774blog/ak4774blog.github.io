@@ -3,6 +3,7 @@ layout: post
 title: basic matrix operations (artin 1.1)
 date: 2025-07-01
 description: yay artin
+tags: mathematics
 ---
 
 This blog post, as well as the upcoming posts, will generally follow the format of the book (Artin Algebra e2) itself. This is an exposition on Chapter 1, 1.1 on the basic operations of Matrices.
