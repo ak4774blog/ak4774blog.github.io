@@ -9,4 +9,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi! I’m a rising sophomore. I am interested in math, cs, and astronomy/astrophysics. In my free time, I like to watch a lot of soccer (go Arsenal) and play various sports/games with my friends. This is a website for my blog. 
+Hello, I am a sophomore interested in math, computer science, and a bit of physics and chemistry. In my free time, I like to play spikeball, frisbee, and badminton with my friends, and listen to music. This website is for my blog. 
