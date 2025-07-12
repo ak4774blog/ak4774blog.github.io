@@ -16,9 +16,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-determinants",
+        },{id: "post-determinants-artin-1-4",
         
-          title: "determinants",
+          title: "determinants (artin 1.4)",
         
         description: "yay artin",
         section: "Posts",
