@@ -1,6 +1,6 @@
 ---
 layout: post
-title: determinants
+title: determinants (artin 1.4)
 date: 2025-07-12
 description: yay artin
 ---
