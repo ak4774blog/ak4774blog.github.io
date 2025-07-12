@@ -13,7 +13,11 @@ Every square matrix has a _determinant_, denoted $\det{A}.$ There are some cases
 
 * $1 \times 1$ matrix. $\det{[a]}=a.$
 
-* $2 \times 2$ matrix. $$\begin{bmatrix} a & b \\ c & d \end{bmatrix} = ad - bc.$$ Note that $|\det{a}|$ is the area of a parallelogram, and if $|\det{a}|=0,$ then the parallelogram degenerates to a line or point.
+* $2 \times 2$ matrix.
+
+$$\begin{bmatrix} a & b \\ c & d \end{bmatrix} = ad - bc.$$ 
+
+Note that $|\det{a}|$ is the area of a parallelogram, and if $|\det{a}|=0,$ then the parallelogram degenerates to a line or point.
 
 This generalizes to any $n\times n$ matrix, so the determinant is a fuction from this space to the real numbers: $\det{}: \mathbb{R}^{n\times n} \rightarrow \mathbb{R}.$
 
@@ -53,12 +57,31 @@ __Corollary.__ (a) A square matric $A$ is invertible if and only if its determin
 
 ## Exercises
 
-__4.1__ Evaluate the following determinants: (a) $\begin{pmatrix} 1 & i \\ 2-i & 3 \end{pmatrix}$, (b) $\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$, (c) $\begin{pmatrix} 2 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 2 \end{pmatrix}$, (d) $\begin{pmatrix} 1 & 0 & 0 & 0 \\ 5 & 2 & 0 & 0 \\ 8 & 6 & 3 & 0 \\ 0 & 9 & 7 & 4 \end{pmatrix}$.
+__4.1__ Evaluate the following determinants: 
+
+(a) 
+
+$$\begin{pmatrix} 1 & i \\ 2-i & 3 \end{pmatrix}$$
+
+(b) 
+
+$$\begin{pmatrix} 1 & 1 \\ 1 & -1 \end{pmatrix}$$
+
+(c) 
+
+$$\begin{pmatrix} 2 & 0 & 1 \\ 0 & 1 & 0 \\ 1 & 0 & 2 \end{pmatrix}$$
+
+(d) 
+
+$$\begin{pmatrix} 1 & 0 & 0 & 0 \\ 5 & 2 & 0 & 0 \\ 8 & 6 & 3 & 0 \\ 0 & 9 & 7 & 4 \end{pmatrix}$$
 
 _Solution._
 (a) The determinant is $(1)(3) - (i)(2-i) = 3 - 2i + i^2 = 3 - 2i - 1 = \boxed{2-2i}$.
 (b) The determinant is $(1)(-1) - (1)(1) = \boxed{-2}$.
-(c) Expanding along the second row gives $1 \cdot (-1)^{2+2} \det\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} = (2)(2) - (1)(1) = \boxed{3}$.
+(c) Expanding along the second row gives 
+
+$$1 \cdot (-1)^{2+2} \det\begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} = (2)(2) - (1)(1) = \boxed{3}$$.
+
 (d) This is a lower triangular matrix, so the answer is $1 \cdot 2 \cdot 3 \cdot 4 = \boxed{24}$.
 
 __4.2__ Verify the rule $\det(AB) = (\det A)(\det B)$ for the matrices $A = \begin{pmatrix} 2 & 3 \\ 1 & 4 \end{pmatrix}$ and $B = \begin{pmatrix} 1 & 1 \\ 5 & -2 \end{pmatrix}$.
