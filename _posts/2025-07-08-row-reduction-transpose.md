@@ -3,6 +3,7 @@ layout: post
 title: row reduction & matrix transpose (artin 1.2 & 1.3)
 date: 2025-07-03
 description: yay artin
+tags: mathematics
 ---
 
 This is an exposition on Sections 1.2 & 1.3 on row reduction and the matrix transpose from Artin Algebra.
