@@ -17,7 +17,7 @@ $$\qquad (i) \begin{bmatrix} 1 & a \\ 0 & 1 \end{bmatrix} \text{ or } \begin{bma
 
 Additionally, there are three main types of $n\times n$ elementary matrices, which can be found by "slicing" the $2 \times 2$ elementary matrices symmetrically into an identity matrix:
 
-Type 1: One off-diagonal entry $a$ is added to the identity matrix. Simply stated, you just place an entry above one of the numbers on the diagonals. When multiplying this elementary matrix by a matrix $X$, the result is to, for $a$ in the $i, j$ position, add $a$ times row $j$ of $X$ to row $i$. This is just adding a multiple of one row to another.
+Type 1: One off-diagonal entry $a$ is added to the identity matrix. Simply stated, you just place an entry above one of the numbers on the diagonals. When multiplying this elementary matrix by a matrix $X$, the result is to, for $a$ in the $i, j$ position, add $a$ of $X$ to row $i$. This is just adding the entries of one row to the entries of another row.
 
 Type 2: The $i$-th and $j$-th diagonal entries of the identity matrix are replaced with a zero, and the 1's are added in the $(i,j)$ and $(j,i)$ positions. Simply stated, in the middle, you make a $2\times 2$ square with corners alternating $0$'s and $1$'s with a $1$ in the middle. Generally, you choose two arbitrary rows of the matrix and swap them.
 
@@ -27,7 +27,7 @@ Type 3: One diagonal entry of the identity matrix is replaced by a nonzero scala
 
 __Lemma.__ Elementary matrices are invertible, and their inverses are also elementary matrices.
 
-_Proof._ We have that the inverse of an elementary matrix is just the matrix corresponding to the inverse row operation: "subtract $a\cdot$ (row $j$) from (row $i$)", "interchange (row $i$) and (row $j$) again", or "multiply (row $i$) by $c^{-1}$".$\square$, as desired $\square$
+_Proof._ We have that the inverse of an elementary matrix is just the matrix corresponding to the inverse row operation "subtract $a\cdot$ (row $j$) from (row $i$)", "interchange (row $i$) and (row $j$) again, or "multiply (row $i$) by $c^{-1}$, as desired. $\square$
 
 Thus, we aim to perform a series of elementary row operations above on a matrix $M$ to end up with a simpler matrix:
 
@@ -47,9 +47,9 @@ $$M = [A|B] = \left[ \begin{array}{ccc|c} a_{11} & \dots & a_{1n} & b_1 \\ \vdot
 
 We perform a sequence of row operations to take $M \rightarrow M'$, or $[A \mid B] \rightarrow [A' \mid B'].$ This follows due to the following proposition.
 
-__Proposition.__ The systems $A'X = B$ and $AX = B$ have the same solutions.
+__Proposition.__ The systems $AX = B$ and $A'X = B'$ have the same solutions.
 
-_Proof._ Set $P:= E_k\dots E_1,$ the row operations acting on $M$. Thus, it follows that $M' = PM.$ The rest follows easily.$\square$, as desired $\square$
+_Proof._ Set $P:= E_k\dots E_1,$ the row operations acting on $M$. Thus, it follows that $M' = PM.$ The rest follows easily, as desired. $\square$
 
 __Remark.__ Choosing some $c := x_n$, where $x_n$ was one of the variables, works nice to solve stuff.
 
@@ -63,21 +63,21 @@ We can reduce a matrix $M$ to a _row echelon matrix_ through a sequence of matri
 
 (d) The entries above a pivot are all $0$.
 
-It follows that every non-zero row has a pivot, and the location of the pivot goes to the right as we move down the matrix.
+It follows that every row has a pivot, and the location of the pivot goes to the right as we move down the matrix.
 
 __Proposition.__ A system of equations $A'X = B'$ has a solution if and only if there is no pivot in the last column.
 
 Every _homogeneous_ linear equation $AX=0$ has the _trivial_ solution $X=0$. If there are more unknowns than equations, then $AX=0$ has a _nontrivial_ solution.
 
-__Corollary__ We also have that every system $AX=0$ with $m$ homogeneous equations with $n$ variables for $m < n$ has a solution $X$ for which some $x_i$ is nonzero.
+__Corollary__ We also have that every system $AX=0$ with $m$ homogeneous equations with $n$ variables for $m < n$ has a solution $X$ for which $x_i$ is nonzero.
 
-_Proof._ The proof hinges on the fact that $A'X = 0$ has the same solutions, so the number of pivots is at most $m$, and thus less than $n$, hence the corollary follows.$\square$, as desired $\square$
+_Proof._ The proof hinges on the fact that $A'X = 0$ has the same number of solutions, so the number of pivots is at most $m$, and thus less than $n$, hence the corollary follows, as desired. $\square$
 
 __Lemma.__ A square echelon matrix $M$ is either the identity matrix $I$, or its bottom row is zero.
 
-_Proof._ Assume $M$ is a $n\times n$ echelon matrix. Then, since there are $n$ columns, there are at most $n$ pivots. If there are $n$ pivots, then there is one in each column, so $M=I$, otherwise, some row is $0$, so the bottom row is also $0$.$\square$, as desired $\square$
+_Proof._ Assume $M$ is a $n\times n$ echelon matrix. Then, since there are $n$ columns, there are at most $n$ pivots. If there are $n$ pivots, then there is one in each column, so $M=I$, otherwise, some row is $0$, so the bottom row is also $0$, as desired. $\square$
 
-We have that the following three statements are equivalent for a square matrix $A$ (but we will not prove this):
+We have that the following three statements are equivalent for some square matrix $A$ (but we will not prove this):
 
 (a) $A$ can be reduced to the identity by a sequence of elementary row operations.
 
