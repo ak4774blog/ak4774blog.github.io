@@ -3,6 +3,7 @@ layout: post
 title: determinants (artin 1.4)
 date: 2025-07-12
 description: yay artin
+tags: mathematics
 ---
 
 This is an exposition on Sections 1.4 on the determinant from Artin Algebra.
