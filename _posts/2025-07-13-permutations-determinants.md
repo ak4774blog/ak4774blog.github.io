@@ -10,25 +10,27 @@ This is an exposition on Chapter 1, 1.5 & 1.6 on permutations and other formulas
 
 ## Notes on Chapter
 
-A _permutation_ of a set $S$ is a bijective map $p$ from a set $S$ to itself:
+Some basic definitions/notes.
+
+* A _permutation_ of a set $S$ is a bijective map $p$ from a set $S$ to itself:
 
 $$p: S\rightarrow S.$$
 
-The set of all permutations of the indices $\{1,2,\dots, \}$ is called the _symmetric group_, denoted by $S_n$. 
+* The set of all permutations of the indices $\{1,2,\dots, \}$ is called the _symmetric group_, denoted by $S_n$. 
 
-We can compose permutations using the notation $qp$, called the _product permutation_.
+* We can compose permutations using the notation $qp$, called the _product permutation_.
 
-We can use _cycle notation_ to represent permutations. For example, if we have the permutation $\pi(\{1,2,3,4,5\})\rightarrow \{3,5,4,1,2\}$, we can create the cycle $(3 4 1)$ to represent $3\rightarrow 4\rightarrow 1 \rightarrow 3.$ Note that this is a $3$-cycle.
+* We can use _cycle notation_ to represent permutations. For example, if we have the permutation $\pi(\{1,2,3,4,5\})\rightarrow \{3,5,4,1,2\}$, we can create the cycle $(3 4 1)$ to represent $3\rightarrow 4\rightarrow 1 \rightarrow 3.$ Note that this is a $3$-cycle.
 
-We can also have $(2,5)$, which is a $2$-cycle, also called _transpositions_. 
+* We can also have $(2,5)$, which is a $2$-cycle, also called _transpositions_. 
 
-The compete cycle notation for $p$ is $(341)(25)$. Note that this is not unique.
+* The compete cycle notation for $p$ is $(341)(25)$. Note that this is not unique.
 
-In cycle notation, every index appears just once, and the order of which the cycles are written does not matter.
+* In cycle notation, every index appears just once, and the order of which the cycles are written does not matter.
 
-To compute the permutation product $qp$, first do $q$, then do $p$, as it is simply the composition $q \circ p.$ 
+* To compute the permutation product $qp$, first do $q$, then do $p$, as it is simply the composition $q \circ p.$ 
 
-There is a _permutation matrix_ $P$ associated to any permutation $p$. Left multiply any matrix $X$ by the permutation matrix $P$ to permute $X$. 
+* There is a _permutation matrix_ $P$ associated to any permutation $p$. Left multiply any matrix $X$ by the permutation matrix $P$ to permute $X$. 
 
 ------
 
