@@ -60,28 +60,27 @@ $A_{ij}$ is the matrix formed by deleting the $i$-th row and $j$-th column of ma
 
 The sign of each term in the expansion depends on the position $(i, j)$ of the entry and is given by $(-1)^{i+j}$. This creates a "checkerboard" pattern of signs:
 
-    $$
-    \begin{matrix}
+$$\begin{matrix}
     + & - & + & - & \cdots \\
     - & + & - & + & \cdots \\
     + & - & + & - & \cdots \\
     \vdots & \vdots & \vdots & \vdots & \ddots
     \end{matrix}
-    $$
+$$
 
 There are two cases for this:
 
 Case 1: Expansion on the $j$-th column.
 
-    $$
-    \det(A) = \sum_{i=1}^{n} (-1)^{i+j} a_{ij} \det(A_{ij})
-    $$
+$$
+\det(A) = \sum_{i=1}^{n} (-1)^{i+j} a_{ij} \det(A_{ij})
+$$
 
 Case 2: Expansion on the $i$-th row.
 
-    $$
-    \det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} \det(A_{ij})
-    $$
+$$
+\det(A) = \sum_{j=1}^{n} (-1)^{i+j} a_{ij} \det(A_{ij})
+$$
 
 __Remark.__ You can simplify calculations by choosing a row or column with the most zeros to expand along, as this will eliminate terms from the sum.
 
@@ -113,7 +112,7 @@ Notice the transposed indices ($A_{ji}$). The cofactor matrix is the *transpose*
 
 To computer $\text{cof}(A)$, we go through a standard algorithm:
 
-1.  Create a matrix of minors (find `$\det(A_{ij})$` for all `$i,j$`).
+1.  Create a matrix of minors (find $\det(A_{ij})$ for all $i,j$).
 2.  Apply the checkerboard of signs to get the matrix of cofactors.
 3.  Transpose the result.
 
