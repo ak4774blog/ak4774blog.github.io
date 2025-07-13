@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/blog/";
           },
-        },{id: "post-determinants-artin-1-4",
+        },{id: "post-permutations-amp-other-determinant-formulas-artin-1-5-amp-1-6",
+        
+          title: "permutations &amp; other determinant formulas (artin 1.5 &amp; 1.6)",
+        
+        description: "yay artin",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/permutations-determinants/";
+          
+        },
+      },{id: "post-determinants-artin-1-4",
         
           title: "determinants (artin 1.4)",
         
