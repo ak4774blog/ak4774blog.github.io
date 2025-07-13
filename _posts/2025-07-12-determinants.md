@@ -18,10 +18,6 @@ Every square matrix has a _determinant_, denoted $\det{A}.$ There are some cases
 
 $$\begin{bmatrix} a & b \\ c & d \end{bmatrix} = ad - bc.$$ 
 
-
-
-Note that $|\det{A}|$ is the area of a parallelogram, and if $|\det{A}|=0,$ then the parallelogram degenerates to a line or point.
-
 This generalizes to any $n\times n$ matrix, so the determinant is a fuction from this space to the real numbers: $\det{}: \mathbb{R}^{n\times n} \rightarrow \mathbb{R}.$
 
 ----
